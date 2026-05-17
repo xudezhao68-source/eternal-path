@@ -250,9 +250,52 @@
                     </div>
                 </div>
 
+                <!-- ===== 深度报告模糊预览 ===== -->
+                <div class="animate-fade-in animate-delay-5" style="position:relative; border-radius:20px; overflow:hidden; margin-top:8px;">
+                    <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(10,10,26,0) 0%, rgba(10,10,26,0.5) 25%, rgba(10,10,26,0.92) 60%, rgba(10,10,26,1) 100%); z-index:2; border-radius:20px; pointer-events:none;"></div>
+                    <div style="position:absolute; bottom:0; left:0; right:0; z-index:3; text-align:center; padding:20px 16px 28px;">
+                        <div style="font-size:32px; margin-bottom:8px;">🔒</div>
+                        <p style="color:#e8cfa0; font-size:16px; font-weight:600; margin:0 0 6px;">解锁完整深度报告</p>
+                        <p style="color:#8888a8; font-size:12px; margin:0 0 16px;">一生运程 · 十年大运 · 爱情财运 · 深度问答</p>
+                        <button onclick="document.getElementById('premiumCard').scrollIntoView({behavior:'smooth'})" style="background:linear-gradient(135deg,#d4a574,#b8874a); color:#0a0a1a; font-weight:600; border:none; border-radius:12px; padding:12px 28px; cursor:pointer; font-size:14px; box-shadow:0 0 20px rgba(212,165,116,.3);">✨ 立即解锁 $4.90</button>
+                    </div>
+                    <div style="filter:blur(5px); pointer-events:none; user-select:none; padding:24px; background:rgba(18,18,42,.8); border:1px solid rgba(42,42,94,.6); border-radius:20px;">
+                        <div style="display:flex; align-items:center; gap:10px; margin-bottom:16px;">
+                            <span style="font-size:20px;">🌅</span>
+                            <div style="font-size:15px; font-weight:600; color:#e8cfa0;">一生运程总览</div>
+                        </div>
+                        <div style="border-left:3px solid #7ec87e; background:rgba(26,26,62,.5); border-radius:0 10px 10px 0; padding:14px 16px; margin-bottom:8px;">
+                            <div style="font-size:12px; color:#7ec87e; font-weight:500; margin-bottom:5px;">🌱 童年与青年 (0–30岁)</div>
+                            <div style="font-size:13px; color:#ccccee; line-height:1.6;">童年时期受家庭环境影响深刻，天资聪颖却需克服内心敏感。青年阶段是自我探索的关键期，约22岁前后会遇到重要的人生转折，学业或事业打下坚实基础。</div>
+                        </div>
+                        <div style="border-left:3px solid #d4a574; background:rgba(26,26,62,.5); border-radius:0 10px 10px 0; padding:14px 16px; margin-bottom:16px;">
+                            <div style="font-size:12px; color:#d4a574; font-weight:500; margin-bottom:5px;">🌳 中年壮年 (30–60岁)</div>
+                            <div style="font-size:13px; color:#ccccee; line-height:1.6;">36岁前后迎来命运关键转折，事业与家庭双线并进。43岁前后运势最旺，是积累财富与声望的黄金期。贵人运强，善用人脉将大有裨益。</div>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px;">
+                            <span style="font-size:20px;">📅</span>
+                            <div style="font-size:15px; font-weight:600; color:#e8cfa0;">十年大运逐年分析</div>
+                        </div>
+                        <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:16px;">
+                            <div style="background:rgba(26,26,62,.6); border:1px solid rgba(42,42,94,.4); border-radius:10px; padding:12px;"><div style="font-size:13px; font-weight:500; color:#e8cfa0; margin-bottom:4px;">2026</div><div style="height:6px; border-radius:3px; background:rgba(42,42,94,.8); overflow:hidden; margin-bottom:4px;"><div style="height:100%; width:78%; background:linear-gradient(90deg,#7b5ea7,#d4a574); border-radius:3px;"></div></div><div style="font-size:11px; color:#8888a8;">突破之年</div></div>
+                            <div style="background:rgba(26,26,62,.6); border:1px solid rgba(42,42,94,.4); border-radius:10px; padding:12px;"><div style="font-size:13px; font-weight:500; color:#e8cfa0; margin-bottom:4px;">2027</div><div style="height:6px; border-radius:3px; background:rgba(42,42,94,.8); overflow:hidden; margin-bottom:4px;"><div style="height:100%; width:91%; background:linear-gradient(90deg,#7b5ea7,#d4a574); border-radius:3px;"></div></div><div style="font-size:11px; color:#8888a8;">财运巅峰</div></div>
+                            <div style="background:rgba(26,26,62,.6); border:1px solid rgba(42,42,94,.4); border-radius:10px; padding:12px;"><div style="font-size:13px; font-weight:500; color:#e8cfa0; margin-bottom:4px;">2028</div><div style="height:6px; border-radius:3px; background:rgba(42,42,94,.8); overflow:hidden; margin-bottom:4px;"><div style="height:100%; width:65%; background:linear-gradient(90deg,#7b5ea7,#d4a574); border-radius:3px;"></div></div><div style="font-size:11px; color:#8888a8;">蓄力之年</div></div>
+                            <div style="background:rgba(26,26,62,.6); border:1px solid rgba(42,42,94,.4); border-radius:10px; padding:12px;"><div style="font-size:13px; font-weight:500; color:#e8cfa0; margin-bottom:4px;">2029</div><div style="height:6px; border-radius:3px; background:rgba(42,42,94,.8); overflow:hidden; margin-bottom:4px;"><div style="height:100%; width:85%; background:linear-gradient(90deg,#7b5ea7,#d4a574); border-radius:3px;"></div></div><div style="font-size:11px; color:#8888a8;">收获之年</div></div>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px;">
+                            <span style="font-size:20px;">💕</span>
+                            <div style="font-size:15px; font-weight:600; color:#e8cfa0;">爱情婚姻深度解读</div>
+                        </div>
+                        <div style="background:rgba(26,26,62,.5); border:1px solid rgba(212,165,116,.15); border-radius:10px; padding:14px; margin-bottom:8px;">
+                            <div style="font-size:12px; color:#d4a574; font-weight:500; margin-bottom:5px;">💝 你的感情模式</div>
+                            <div style="font-size:13px; color:#ccccee; line-height:1.6;">你在感情中深情专一，一旦投入便全心全意。最佳婚配年龄在27至35岁之间，2027年前后有强烈桃花运...</div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="animate-fade-in animate-delay-5 space-y-6" style="margin-top:8px;">
 
-                    <div class="card-premium p-6 sm:p-8 text-center relative overflow-hidden">
+                    <div id="premiumCard" class="card-premium p-6 sm:p-8 text-center relative overflow-hidden">
                         <div class="absolute -top-24 -right-24 w-48 h-48 rounded-full" style="background:radial-gradient(circle,rgba(212,165,116,.12) 0%,transparent 70%); pointer-events:none;"></div>
                         <div class="absolute -bottom-20 -left-20 w-40 h-40 rounded-full" style="background:radial-gradient(circle,rgba(123,94,167,.1) 0%,transparent 70%); pointer-events:none;"></div>
                         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full" style="background:radial-gradient(circle,rgba(212,165,116,.04) 0%,transparent 60%); pointer-events:none;"></div>
@@ -299,12 +342,15 @@
                                 }).render("#paypal-container-CQ2A8GE2T3PGE");
                             </script>
 
-                            <!-- 付款成功后手动输入订单号解锁（HostedButtons不支持onApprove回调）-->
+                            <!-- 付款成功后手动输入订单号解锁 -->
                             <div id="unlockArea" style="margin-top:16px; display:none;">
-                                <p style="font-size:12px; color:#8888a8; margin-bottom:8px;">付款成功后，请将 PayPal 邮件中的订单号粘贴到下方：</p>
-                                <div style="display:flex; gap:8px;">
-                                    <input id="orderIdInput" type="text" placeholder="PayPal Order ID (e.g. 1AB23456CD789...)" style="flex:1; background:rgba(26,26,62,.6); border:1px solid rgba(42,42,94,.6); color:#e0dce8; border-radius:10px; padding:10px 14px; font-size:13px;" />
-                                    <button onclick="verifyAndUnlock()" style="background:linear-gradient(135deg,#d4a574,#b8874a); color:#0a0a1a; font-weight:600; border:none; border-radius:10px; padding:10px 18px; cursor:pointer; font-size:13px; white-space:nowrap;">解锁报告</button>
+                                <p style="font-size:12px; color:#8888a8; margin-bottom:10px;">付款成功后，请填写以下信息解锁报告：</p>
+                                <div style="display:flex; flex-direction:column; gap:8px;">
+                                    <input id="userEmailInput" type="email" placeholder="你的邮箱（用于接收确认邮件）" style="background:rgba(26,26,62,.6); border:1px solid rgba(42,42,94,.6); color:#e0dce8; border-radius:10px; padding:10px 14px; font-size:13px; width:100%;" />
+                                    <div style="display:flex; gap:8px;">
+                                        <input id="orderIdInput" type="text" placeholder="PayPal 订单号（邮件中可找到）" style="flex:1; background:rgba(26,26,62,.6); border:1px solid rgba(42,42,94,.6); color:#e0dce8; border-radius:10px; padding:10px 14px; font-size:13px;" />
+                                        <button onclick="verifyAndUnlock()" style="background:linear-gradient(135deg,#d4a574,#b8874a); color:#0a0a1a; font-weight:600; border:none; border-radius:10px; padding:10px 18px; cursor:pointer; font-size:13px; white-space:nowrap;">解锁</button>
+                                    </div>
                                 </div>
                                 <p id="unlockMsg" style="font-size:12px; margin-top:6px; color:#8888a8;"></p>
                             </div>
@@ -898,7 +944,9 @@
                 const res = await fetch('/api/verify-payment', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ orderId }),
+                    const userEmail = document.getElementById('userEmailInput')?.value?.trim() || '';
+                const userName = window._fortuneData?.name || '';
+                body: JSON.stringify({ orderId, userEmail, userName }),
                 });
                 const data = await res.json();
 
