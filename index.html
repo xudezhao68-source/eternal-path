@@ -899,7 +899,7 @@
                     sessionStorage.setItem('unlock_order', orderId);
                     msg.textContent = '✅ 验证成功！正在解锁...';
                     msg.style.color = '#7ec87e';
-                    setTimeout(() => unlockPremiumReport(), 800);
+                    setTimeout(() => unlockPremiumReport(data.token), 800);
                 } else {
                     msg.textContent = '❌ 未找到有效付款，请确认订单号是否正确';
                     msg.style.color = '#e85d5d';
@@ -926,8 +926,15 @@
             }
         })();
 
-        // ===== 解锁深度报告 =====
-        window.unlockPremiumReport = function() {
+        // ===== 解锁深度报告（必须传入有效token才能解锁）=====
+        let _unlocked = false;
+        window.unlockPremiumReport = function(verifiedToken) {
+            // 必须有服务器验证过的token才能解锁
+            if (!verifiedToken && !_unlocked) {
+                console.warn('Unlock requires verified token');
+                return;
+            }
+            _unlocked = true;
             const section = document.getElementById('premiumReportSection');
             section.classList.add('unlocked');
             generatePremiumReport();
@@ -938,7 +945,7 @@
         };
 
         window.addEventListener('scroll',()=>{document.getElementById('navbar').style.boxShadow=window.scrollY>50?'0 4px 20px rgba(0,0,0,.4)':'none';});
-        console.log('🌟 Eternal Path · 缘途 AI — Ready');
+
     })();
     </script>
 </body>
